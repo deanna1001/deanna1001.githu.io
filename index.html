@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 0;
+          padding: 0;
+          background: #f4f4f4;
+        }
+        header {
+          background: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+        nav {
+          display: flex;
+          justify-content: center;
+          background: #444;
+        }
+        nav button {
+          background: none;
+          border: none;
+          color: #fff;
+          padding: 15px;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        nav button:hover {
+          background: #666;
+        }
+        section {
+          padding: 20px;
+          display: none;
+        }
+        section.active {
+          display: block;
+        }
+        .project {
+          background: #fff;
+          margin: 10px 0;
+          padding: 15px;
+          border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>My Personal Portfolio</h1>
+
+</header>
+
+<nav>
+    <button onclick="showSection('about')">About Me</button>
+    <button onclick="showSection('projects')">Projects</button>
+    <button onclick="showSection('contact')">Contact</button>
+</nav>
+
+<section id="about" class="active">
+    <h2>About Me</h2>
+    <p>Hello! I'm Deanna, an aspiring IT professional passionate about coding, design, and creativity.</p>
+</section>
+<style>#about {
+    text-align: center </style>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>A responsive portfolio built with basic HTML codes.</p>
+    </div>
+
+    <div class="project">
+        <h3>Resume Design</h3>
+        <p>Modern resume layouts created with Canva.</p>
+        <a href="https://www.canva.com/design/DAGEPyiaFKg/8aG5cvnbo50VWDde2zvdug/view?utm_content=DAGEPyiaFKg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb571023b04" target="_blank">
+            https://www.canva.com/design/DAGEPyiaFKg/8aG5cvnbo50VWDde2zvdug/view?utm_content=DAGEPyiaFKg&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb571023b04</a>
+    </div>
+
+    <div class="project">
+        <h3>JavaScript</h3>
+        <p>A Java Swing GUI project built to complete a school requirement. It collects user details through a form and uses event-driven programming to process actions like submitting or clearing input.</p>
+
+        <p>Output:</p>
+        <div style="text-align: center;">
+            <img src="SS6.png.png" alt="Event Driven Output" width="500">
+        </div>
+
+
+        <p>Code:</p>
+        <img src="SS1.png.png" alt="Code Screenshot" width="400">
+        <img src="SS2.png.png" alt="Code Screenshot" width="400">
+        <img src="SS3.png.png" alt="Code Screenshot" width="400">
+        <img src="SS4.png.png" alt="Code Screenshot" width="400">
+        <img src="SS5.png.png" alt="Code Screenshot" width="400">
+    </div>
+
+    <div class="project">
+        <h3>CSS and HTML</h3>
+        <p>A school project that uses HTML and CSS to visualize fixed memory partitions, showing process usage and wasted space with color‑coded blocks.</p>
+
+        <p>Output:</p>
+        <div style="text-align: center;">
+            <img src="CSS.png.png" alt="Fixed Partitions Output" width="500">
+        </div>
+
+        <p>Code:</p>
+        <img src="CSS1.png.png" alt="Code Screenshot" width="400">
+        <img src="CSS2.png.png" alt="Code Screenshot" width="400">
+        <img src="CSS3.png.png" alt="Code Screenshot" width="400">
+    </div>
+
+    <div class="project">
+        <h3>Guessing Game</h3>
+        <p>A beginner C++ project where I coded a number guessing game. Built for fun and as a challenge, it uses loops, conditionals, and random number generation to give feedback until the correct guess is made.</p>
+
+        <p>Output and code using programiz</p>
+        <img src="GG1.png.png" alt="Code Screenshot" width="400">
+        <img src="GG2.png.png" alt="Code Screenshot" width="400">
+        <img src="GG3.png.png" alt="Code Screenshot" width="400">
+
+    </div>
+
+
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email:</p>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=deannajocelyn.aniban@gmail.com" target="_blank">
+        deannajocelyn.aniban@gmail.com
+    </a>
+
+    <p>LinkedIn:</p>
+        <a href="https://www.linkedin.com/in/deanna-aniban-38a475306/" target="_blank">
+            Deanna Aniban
+        </a>
+
+    <p>Facebook:</p>
+        <a href="https://www.facebook.com/dj.aniban" target="_blank">
+            Deanna Aniban
+        </a>
+
+</section>
+<style>#contact {
+    text-align: center </style>
+<script>
+    function showSection(sectionId) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(sectionId).classList.add("active");
+    }
+</script>
+</body>
+</html>
